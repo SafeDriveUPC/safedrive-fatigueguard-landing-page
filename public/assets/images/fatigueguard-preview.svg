@@ -1,0 +1,16 @@
+<svg width="600" height="420" viewBox="0 0 600 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="600" height="420" rx="32" fill="#F5F8FF"/>
+    <rect x="210" y="40" width="180" height="340" rx="36" fill="#111827"/>
+    <rect x="224" y="70" width="152" height="286" rx="26" fill="white"/>
+    <rect x="268" y="82" width="64" height="14" rx="7" fill="#0B2240"/>
+    <text x="246" y="125" font-family="Arial" font-size="16" font-weight="700" fill="#0B63FF">FatigueGuard</text>
+    <rect x="244" y="150" width="112" height="70" rx="14" fill="#E9FFF4"/>
+    <circle cx="344" cy="168" r="6" fill="#00B894"/>
+    <text x="258" y="178" font-family="Arial" font-size="12" fill="#6B7A90">Monitoreo activo</text>
+    <text x="258" y="202" font-family="Arial" font-size="18" font-weight="700" fill="#00B894">Fatiga baja</text>
+    <circle cx="300" cy="270" r="46" fill="#D9E8FF"/>
+    <circle cx="300" cy="255" r="16" fill="#0B2240"/>
+    <rect x="278" y="273" width="44" height="28" rx="14" fill="#0B2240"/>
+    <rect x="244" y="322" width="112" height="24" rx="8" fill="#0B63FF"/>
+    <text x="270" y="338" font-family="Arial" font-size="10" font-weight="700" fill="white">Iniciar</text>
+</svg>
