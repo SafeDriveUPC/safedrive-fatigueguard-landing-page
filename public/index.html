@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="SafeDrive">
+    <meta name="description" content="Landing Page de FatigueGuard, aplicación móvil para detectar fatiga en conductores mediante inteligencia artificial.">
+    <title>FatigueGuard | SafeDrive</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <a href="#inicio" class="logo">
+            <span class="logo-icon">FG</span>
+            <span>FatigueGuard</span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+            ☰
+        </button>
+
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#problema">Problema</a></li>
+            <li><a href="#solucion">Solución</a></li>
+            <li><a href="#funciones">Funciones</a></li>
+            <li><a href="#segmentos">Segmentos</a></li>
+            <li><a href="#contacto" class="nav-button">Contáctanos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <p class="tagline">SafeDrive presenta</p>
+            <h1>FatigueGuard</h1>
+            <h2>Conduce alerta, llega seguro.</h2>
+            <p class="hero-description">
+                Aplicación móvil que detecta señales de fatiga en conductores mediante inteligencia artificial,
+                emitiendo alertas preventivas para reducir accidentes de tránsito.
+            </p>
+
+            <div class="hero-actions">
+                <a href="#solucion" class="btn btn-primary">Conocer solución</a>
+                <a href="#funciones" class="btn btn-secondary">Ver funciones</a>
+            </div>
+
+            <div class="hero-stats">
+                <article>
+                    <strong>IA</strong>
+                    <span>Detección facial</span>
+                </article>
+                <article>
+                    <strong>24/7</strong>
+                    <span>Monitoreo preventivo</span>
+                </article>
+                <article>
+                    <strong>App</strong>
+                    <span>Sin hardware costoso</span>
+                </article>
+            </div>
+        </div>
+
+        <div class="hero-phone">
+            <div class="phone">
+                <div class="phone-top"></div>
+                <div class="phone-screen">
+                    <p class="phone-label">FatigueGuard</p>
+
+                    <div class="fatigue-card">
+                        <span class="status-dot"></span>
+                        <p>Monitoreo activo</p>
+                        <h3>Fatiga baja</h3>
+                        <small>Todo en orden</small>
+                    </div>
+
+                    <div class="face-box">
+                        👤
+                    </div>
+
+                    <div class="mini-cards">
+                        <div>
+                            <strong>7h</strong>
+                            <span>Sueño</span>
+                        </div>
+                        <div>
+                            <strong>0</strong>
+                            <span>Alertas</span>
+                        </div>
+                    </div>
+
+                    <button class="phone-button">Iniciar monitoreo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section problem" id="problema">
+        <div class="section-heading">
+            <p class="tagline">El problema</p>
+            <h2>La fatiga al conducir puede provocar accidentes graves</h2>
+            <p>
+                Muchos conductores trabajan durante jornadas extensas, con poco descanso, tráfico intenso
+                y presión por completar rutas. Esto aumenta el riesgo de microsueños y pérdida de concentración.
+            </p>
+        </div>
+
+        <div class="problem-grid">
+            <article class="card">
+                <span class="card-icon">😴</span>
+                <h3>Poco descanso</h3>
+                <p>Las jornadas prolongadas afectan la atención y el tiempo de reacción del conductor.</p>
+            </article>
+
+            <article class="card">
+                <span class="card-icon">🚗</span>
+                <h3>Riesgo vial</h3>
+                <p>La fatiga puede generar errores de conducción, frenadas tardías o microsueños.</p>
+            </article>
+
+            <article class="card">
+                <span class="card-icon">🩺</span>
+                <h3>Evaluación limitada</h3>
+                <p>Los doctores suelen depender del relato del paciente, sin datos continuos de fatiga.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section solution" id="solucion">
+        <div class="solution-content">
+            <div>
+                <p class="tagline">Nuestra solución</p>
+                <h2>Monitoreo preventivo desde el smartphone</h2>
+                <p>
+                    FatigueGuard utiliza la cámara del celular para analizar señales faciales asociadas a fatiga,
+                    como cierre prolongado de ojos, bostezos, cabeceo y desatención visual.
+                </p>
+
+                <ul class="check-list">
+                    <li>✓ Evaluación inicial antes de conducir.</li>
+                    <li>✓ Calibración facial desde el celular.</li>
+                    <li>✓ Alertas visuales, sonoras y por vibración.</li>
+                    <li>✓ Historial útil para el conductor y el doctor.</li>
+                </ul>
+            </div>
+
+            <div class="solution-panel">
+                <h3>Simulador de riesgo</h3>
+                <p>Modifica las horas de sueño para visualizar el nivel de fatiga.</p>
+
+                <label for="sleepRange">Horas de sueño: <span id="sleepValue">7</span>h</label>
+                <input type="range" id="sleepRange" min="3" max="9" value="7">
+
+                <div class="risk-result risk-low" id="riskResult">
+                    <span>Riesgo bajo</span>
+                    <strong>Conducción segura</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section features" id="funciones">
+        <div class="section-heading">
+            <p class="tagline">Características principales</p>
+            <h2>Funciones clave de FatigueGuard</h2>
+            <p>La solución combina monitoreo, alertas preventivas, historial y apoyo clínico.</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab="tab1">Evaluación</button>
+            <button class="tab-button" data-tab="tab2">Monitoreo</button>
+            <button class="tab-button" data-tab="tab3">Alertas</button>
+            <button class="tab-button" data-tab="tab4">Historial</button>
+        </div>
+
+        <div class="tab-content active" id="tab1">
+            <article>
+                <span class="tab-icon">📋</span>
+                <h3>Evaluación inicial</h3>
+                <p>Antes de manejar, el conductor registra sus horas de sueño y recibe una primera evaluación de fatiga.</p>
+            </article>
+        </div>
+
+        <div class="tab-content" id="tab2">
+            <article>
+                <span class="tab-icon">👁️</span>
+                <h3>Monitoreo facial</h3>
+                <p>La cámara frontal analiza señales faciales para detectar signos de cansancio o somnolencia.</p>
+            </article>
+        </div>
+
+        <div class="tab-content" id="tab3">
+            <article>
+                <span class="tab-icon">🔔</span>
+                <h3>Alertas preventivas</h3>
+                <p>La app emite alertas visuales, sonoras y por vibración cuando identifica riesgo de fatiga.</p>
+            </article>
+        </div>
+
+        <div class="tab-content" id="tab4">
+            <article>
+                <span class="tab-icon">📊</span>
+                <h3>Historial y seguimiento</h3>
+                <p>El usuario puede revisar eventos de fatiga, horarios críticos y recomendaciones personalizadas.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section segments" id="segmentos">
+        <div class="section-heading">
+            <p class="tagline">Segmentos objetivo</p>
+            <h2>Diseñado para conductores y doctores</h2>
+        </div>
+
+        <div class="segment-grid">
+            <article class="segment-card">
+                <span class="card-icon">🚕</span>
+                <h3>Conductores de transporte público</h3>
+                <p>
+                    Utilizan la app para detectar fatiga durante sus jornadas y recibir alertas antes de que ocurra un incidente.
+                </p>
+            </article>
+
+            <article class="segment-card">
+                <span class="card-icon">👨‍⚕️</span>
+                <h3>Doctores</h3>
+                <p>
+                    Revisan el historial de fatiga del paciente como información complementaria para su evaluación clínica.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section testimonial">
+        <div class="testimonial-box">
+            <span class="quote-icon">“</span>
+            <p>
+                Me parece bastante interesante porque puede ayudar a conductores cansados o con sueño,
+                evitando accidentes y mejorando la seguridad del pasajero.
+            </p>
+            <h4>Sebastian Medina</h4>
+            <span>Usuario participante en validación</span>
+        </div>
+    </section>
+
+    <section class="section contact" id="contacto">
+        <div class="section-heading">
+            <p class="tagline">Contacto</p>
+            <h2>¿Deseas conocer más sobre FatigueGuard?</h2>
+            <p>Déjanos tus datos y el equipo de SafeDrive se comunicará contigo.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo</label>
+                <input type="email" id="email" placeholder="Ingresa tu correo">
+            </div>
+
+            <div class="form-group">
+                <label for="profile">Perfil</label>
+                <select id="profile">
+                    <option value="">Selecciona una opción</option>
+                    <option value="conductor">Conductor</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar información</button>
+            <p class="form-message" id="formMessage"></p>
+        </form>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2026 SafeDrive - FatigueGuard. Todos los derechos reservados.</p>
+    <p>Proyecto académico UPC | IHC y Tecnologías Móviles</p>
+</footer>
+
+<script src="assets/scripts/main.js"></script>
+</body>
+</html>
